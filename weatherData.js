@@ -5,12 +5,12 @@ class WeatherData {
         }
     }
 
-    tempInC() {
+    get tempInC() {
         const tempInC = this.main.temp - 273.15;
         return parseFloat(tempInC.toFixed(1));
     }
 
-    tempInF() {
+    get tempInF() {
         const tempInF = (this.main.temp - 273.15) * 9 / 5 + 32;
         return parseFloat(tempInF.toFixed(0));
     }
