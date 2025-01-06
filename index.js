@@ -1,5 +1,7 @@
 import { lat, lon } from "./config.js";
 import { getTheWeather } from "./weatherData.js";
+import { secondLine } from "./secondLine.js";
+
 
 (async () => {
     const weather = await getTheWeather(lat, lon);
@@ -10,8 +12,6 @@ import { getTheWeather } from "./weatherData.js";
     const tempElementF = document.getElementById("tempf-js");
     tempElementF.innerHTML = weather.tempInF();
 
-
-
-    console.log(`The current temperature in ${weather.name} is ${weather.tempInC()}°C.`);
+    const funnyLine = document.getElementById("secondary");
+    funnyLine.innerHTML = secondLine(weather.tempInC());
 })();
-
