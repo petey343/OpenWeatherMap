@@ -1,7 +1,6 @@
 import { lat, lon } from "./config.js";
 import { getTheWeather } from "./weatherData.js";
 import { secondLine } from "./secondLine.js";
-import getHourlyWeatherData from "./weatherDataHourly.js";
 import buildCards from "./buildWeatherCards.js";
 
 (async () => {
