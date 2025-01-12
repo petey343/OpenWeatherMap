@@ -1,6 +1,7 @@
 import { lat, lon } from "./config.js";
 import { getTheWeather } from "./weatherData.js";
 import { secondLine } from "./secondLine.js";
+import getHourlyWeatherData from "./weatherDataHourly.js";
 
 (async () => {
     const spinner = document.getElementById("loading-spinner");
@@ -19,7 +20,6 @@ import { secondLine } from "./secondLine.js";
 
             const funnyLine = document.getElementById("secondary");
             funnyLine.innerHTML = secondLine(weather.tempInC);
-            console.log(typeof weather.tempC);
         } else {
             throw new Error("No data received.");
         }
@@ -28,3 +28,5 @@ import { secondLine } from "./secondLine.js";
         console.error("Error fetching weather data:", error);
     }
 })();
+
+getHourlyWeatherData(lat, lon);
