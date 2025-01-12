@@ -7,12 +7,24 @@
 .weather-card {
   display: flex;
   flex-direction: column;
-  width: 75px;
-  height: auto;
+  width: auto;
+  height: 150px;
   aspect-ratio: 1/1.414;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
   border: 1px;
   border-radius: 5px;
   border-color: antiquewhite;
   border-style: solid;
+  padding: 10px 0px;
+}
+
+.weather-card-icon {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  /* border: 1px;
+  border-radius: 5px;
+  border-color: antiquewhite;
+  border-style: solid; */
 }

@@ -2,6 +2,7 @@ import { lat, lon } from "./config.js";
 import { getTheWeather } from "./weatherData.js";
 import { secondLine } from "./secondLine.js";
 import getHourlyWeatherData from "./weatherDataHourly.js";
+import buildCards from "./buildWeatherCards.js";
 
 (async () => {
     const spinner = document.getElementById("loading-spinner");
@@ -29,4 +30,4 @@ import getHourlyWeatherData from "./weatherDataHourly.js";
     }
 })();
 
-getHourlyWeatherData(lat, lon);
+buildCards(lat, lon);
