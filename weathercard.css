@@ -1,4 +1,4 @@
-.weather-cards-container {
+/* .weather-cards-container {
   display: flex;
   margin-top: 35px;
   gap: 10px;
@@ -27,5 +27,36 @@
   /* border: 1px;
   border-radius: 5px;
   border-color: antiquewhite;
-  border-style: solid; */
+  border-style: solid;
+} */
+
+.weather-card {
+  background-color: #fff; /* White background for contrast */
+  padding: 15px;
+  border: 1px solid antiquewhite;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: transform 0.2s;
+}
+
+.weather-card:hover {
+  transform: translateY(-5px); /* Subtle lift on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.weather-card-time {
+  font-size: 16px;
+  color: #555;
+}
+
+.weather-card-description {
+  font-size: 14px;
+  font-style: italic;
+  color: #777;
+}
+
+.weather-card-temp {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
 }
