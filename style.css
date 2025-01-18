@@ -75,7 +75,7 @@ body {
 }
 
 .first-line {
-  font-size: 18px;
+  /* font-size: 18px; */
   font-weight: bold;
   color: #333;
   text-align: center;

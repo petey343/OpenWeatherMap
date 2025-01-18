@@ -1,12 +1,15 @@
 export function secondLine(temperature) {
     const quips = {
+        chilly: "Expect gross mushy melty snowy gray brown puddles outside.",
         cold: "Cold but I'm sure there's still nitwits wearing shorts.",
         veryCold: "That's pretty cold. Wear a sweater.",
         fuckingCold: "It's colder than a witch's tit.",
         wtfCold: "Colder than my father's dead shriveled black heart."
     };
 
-    if (temperature >= -5 && temperature < 0) {
+    if (temperature >= 0 && temperature < 5) {
+        return quips.chilly;
+    } else if (temperature >= -5 && temperature < 0) {
         return quips.cold;
     } else if (temperature >= -10 && temperature < -5) {
         return quips.veryCold;
