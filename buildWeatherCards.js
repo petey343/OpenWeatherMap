@@ -16,12 +16,12 @@ async function buildCards(lat, lon) {
         const description = entry.weather[0].main;
 
         const cardHTML = `
-        <div class="weather-card">
-            <div class="weather-card-time">${time}</div>
-            <img class="weather-card-icon" src="https://openweathermap.org/img/wn/${icon}@2x.png">
-            <div class="weather-card-description">${description}</div>
-            <div class="weather-card-temp">${temp}°C</div>
-        </div>
+        <div class="weather-card col bg-primary p-2 text-start m-2 rounded">
+        <div class="weather-card-time">${time}</div>
+        <div class="d-flex justify-content-center">
+        <img class="weather-card-icon" src="https://openweathermap.org/img/wn/${icon}@2x.png"></div>
+        <div class="weather-card-description"><em>${description}</em></div>
+        <div class="weather-card-temp text-bold"><strong>${temp}°C</strong></div></div>
     `;
         weatherCardsContainer.innerHTML += cardHTML;
     }

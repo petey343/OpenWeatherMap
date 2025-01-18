@@ -4,24 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather in Granville, NY</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="/weathercard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
     <script src="./index.js" type="module" defer></script>
   </head>
-  <body>
-    <div class="container">
-      <div id="main" class="first-line">
+  <body class="bg-dark text-white text-center">
+    <div class="container-lg">
+      <h1 id="main" class="first-line display-4 m-3">
         It's currently <span id="temp-js">-</span>°C (<span id="tempf-js"
           >-</span
         >°F) in Granville, NY
-      </div>
-      <div id="secondary" class="second-line">...</div>
-      <div id="loading-spinner" class="spinner" style="display: none"></div>
-      <div class="weather-cards-container">
-        
-        </div>
-      </div>
+      </h1>
+      <h3 id="secondary" class="second-line lead m-4">...</h3>
+      <div class="weather-cards-container row m-5"></div>
     </div>
+
     <script src="http://localhost:35729/livereload.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

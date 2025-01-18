@@ -5,12 +5,12 @@ import buildCards from "./buildWeatherCards.js";
 
 (async () => {
     const spinner = document.getElementById("loading-spinner");
-    spinner.style.display = "block";
+    // spinner.style.display = "block";
 
     try {
         const weather = await getTheWeather(lat, lon);
         if (weather) {
-            spinner.style.display = "none";
+            // spinner.style.display = "none";
 
             const tempElement = document.getElementById("temp-js");
             tempElement.innerHTML = weather.tempInC;
@@ -24,7 +24,7 @@ import buildCards from "./buildWeatherCards.js";
             throw new Error("No data received.");
         }
     } catch (error) {
-        spinner.style.display = "none";
+        // spinner.style.display = "none";
         console.error("Error fetching weather data:", error);
     }
 })();
