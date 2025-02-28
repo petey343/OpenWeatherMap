@@ -19,8 +19,10 @@ async function buildCards(lat, lon) {
         <div class="weather-card">
             <div class="weather-card-time">${time}</div>
             <img class="weather-card-icon" src="https://openweathermap.org/img/wn/${icon}@2x.png">
-            <div class="weather-card-description">${description}</div>
-            <div class="weather-card-temp">${temp}°C</div>
+            <div class="description-and-temp">
+                <div class="weather-card-description">${description}</div>
+                <div class="weather-card-temp">${temp}°C</div>
+            </div>
         </div>
     `;
         weatherCardsContainer.innerHTML += cardHTML;

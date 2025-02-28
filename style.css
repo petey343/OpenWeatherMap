@@ -52,10 +52,16 @@ body {
   }
 } */
 
+/* 
 @media (max-width: 768px) {
   .weather-card {
-    width: 100px; /* Reduce width on smaller screens */
+    width: 100px;
   }
+} 
+*/
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -114,4 +120,11 @@ body {
   justify-content: center; /* Center the cards in the container */
   gap: 20px; /* Add spacing between cards */
   margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .weather-cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
